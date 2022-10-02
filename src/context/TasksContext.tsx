@@ -26,19 +26,30 @@ export const TasksProvider: React.FC<Iprops> = ({ children }) => {
 
     useEffect(() => {
         async function loadTasks() {
-            const taskList = await AsyncStorage;
+            const taskList = await AsyncStorage.getItem(tasksData);
+
+            if (taskList) {
+                setData(JSON.parse(taskList));
+            }
+
         }
+        loadTasks();
     }, []);
 
-    const addTask = (task: ITask) => {
-        console.log("Add New Task Teste");
+    const addTask = async (task: ITask) => {
+        try {
+            const newTaskList = [...data, task];
+            setData(newTaskList);
+            await AsyncStorage.setItem(tasksData, JSON.stringify(newTaskList));
+        } catch (error) {
+            throw new Error(error as string)
+        }
+    };
 
-    }
 
-    const tasks = [{ id: '1', title: "hi" }]
 
     return (
-        <TasksContext.Provider value={{ tasks, addTask }}>
+        <TasksContext.Provider value={{ tasks: data, addTask }}>
             {children}
         </TasksContext.Provider>
     );
