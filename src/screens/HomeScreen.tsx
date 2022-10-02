@@ -7,13 +7,13 @@ import {
 } from "../styles/HomeScreenStyles";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { TaskList } from "../components/TasksList";
-import { TasksContext } from "../context/TasksContext";
+import { TasksContext, useTaskList } from "../context/TasksContext";
 
 export const HomeScreen: React.FC = () => {
 
     const [newTask, setNewTask] = useState('');
 
-    const { addTask } = useContext(TasksContext);
+    const { addTask } = useTaskList();
 
     const addNewTask = () => {
         const data = {

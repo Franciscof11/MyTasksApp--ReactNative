@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export interface Iprops {
@@ -53,4 +53,15 @@ export const TasksProvider: React.FC<Iprops> = ({ children }) => {
             {children}
         </TasksContext.Provider>
     );
+}
+
+export function useTaskList(): ItaskContext {
+    const context = useContext(TasksContext);
+
+    if (!context) {
+        throw new Error("useTaskList deve ser usado em um TaskProvider");
+    }
+
+    return context;
+
 }

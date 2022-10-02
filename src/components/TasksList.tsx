@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { ITask, ItaskContext, TasksContext } from "../context/TasksContext";
+import { ITask, ItaskContext, TasksContext, useTaskList } from "../context/TasksContext";
 import { ScrollListTasks, TaskContentTouchView, TaskContentText } from "../styles/HomeScreenStyles";
 
 export const TaskList: React.FC = () => {
-    const { tasks } = useContext(TasksContext);
+    const { tasks } = useTaskList();
     return (
 
         <ScrollListTasks
