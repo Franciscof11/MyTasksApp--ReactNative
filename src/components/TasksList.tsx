@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
-import { Task } from "react-native";
-import { ItaskContext, TasksContext } from "../context/TasksContext";
+import { ITask, ItaskContext, TasksContext } from "../context/TasksContext";
 import { ScrollListTasks, TaskContentTouchView, TaskContentText } from "../styles/HomeScreenStyles";
 
 export const TaskList: React.FC = () => {
-    const tasks = useContext(TasksContext);
+    const { tasks } = useContext(TasksContext);
     return (
 
         <ScrollListTasks
-            data={tasks as unknown as ItaskContext[]}
+            data={tasks as unknown as ITask[]}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
                 <TaskContentTouchView>

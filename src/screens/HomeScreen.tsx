@@ -21,13 +21,12 @@ export const HomeScreen: React.FC = () => {
             title: newTask ? newTask : 'Tarefa vazia',
         };
 
-        addTask();
+        addTask(data);
 
         setNewTask(''); /*Limpa o input após inserir nova Task*/
     };
 
     return (
-
         <ViewBackground >
             <ViewContainer>
                 <View style={{ width: 400 }}>
