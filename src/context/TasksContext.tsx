@@ -16,6 +16,7 @@ export interface ItaskContext {
     /*tipos do context*/
     tasks: ITask[];
     addTask(tasks: ITask): void;
+    removeTask(id: string): void;
 }
 
 export const TasksContext = React.createContext<ItaskContext>({} as ItaskContext);
@@ -39,17 +40,21 @@ export const TasksProvider: React.FC<Iprops> = ({ children }) => {
     const addTask = async (task: ITask) => {
         try {
             const newTaskList = [...data, task];
-            setData(newTaskList);
-            await AsyncStorage.setItem(tasksData, JSON.stringify(newTaskList));
+            setData(newTaskList); /*Atualiza o estado*/
+            await AsyncStorage.setItem(tasksData, JSON.stringify(newTaskList)); /*Atualiza o storage*/
         } catch (error) {
             throw new Error(error as string)
         }
     };
 
-
+    const removeTask = async (id: string) => {
+        const newTaskList = data.filter(task => task.id != id);
+        setData(newTaskList);/*Atualiza o estado*/
+        await AsyncStorage.setItem(tasksData, JSON.stringify(newTaskList));/*Atualiza o storage*/
+    }
 
     return (
-        <TasksContext.Provider value={{ tasks: data, addTask }}>
+        <TasksContext.Provider value={{ tasks: data, addTask, removeTask }}>
             {children}
         </TasksContext.Provider>
     );
