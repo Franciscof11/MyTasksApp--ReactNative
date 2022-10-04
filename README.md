@@ -1,65 +1,75 @@
-# Projeto MyTasks App
+<h2 align="left">MyTasks App 📝</h2>
 <p align="center">
-  <a href="https://inforgeneses.com.br/" target="blank">
     <img src="https://i.imgur.com/ZrJIyr8.png" width="650" alt="MyTask App Banner" />
-  </a>
 </p>
 
-## Instalação
+   <h2>Topics 📋</h2>
 
-```bash
-# instale o yarn
-$ npm i -g yarn
+   <p>
+   
+   - [About 📖](#about-)
+   - [Preview 📱](#preview-)
+   - [Challenges and Learnings along the way 🤯](#---challenges-and-learnings-along-the-way----)
+   - [How to Use 🤔](#how-to-use-)
+   - [How to Contribute 💪](#how-to-contribute-)
+   - [License 📝](#license-)
 
-# instale o expo cli
-$ npm i -g expo-cli
+   </p>
 
-# utilize yarn para instalar dependências
-$ yarn install
-```
+   <h2>About 📖</h2>
+   
+   <p>   
+      A simple ToDo app made with Flutter 💙.<br>
+      With this app you can make your ToDos and organize them. You can add them, delete them (with option to undo later), and view them so that you see the ones that are pending first, and below the completed ones. It is a simple application, but it can be very useful when it comes to your organization. 😃
+      This application is in version 1.1.
+   </p>
 
-## Testes
+---
 
-###### Recomenda-se a instação da extensão **[Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)**
+   <h2>Preview 📱</h2><br>
 
-```bash
-# Rodandno testes com o yarn
-$ yarn test
-```
+   <p a>
+   <img src="demos/version1.1.gif" width="400">
+   </p>
 
-<p>Para criar novos testes de componentes, basta criar um arquivo <strong>.spec.tsx</strong> dentro da pasta <strong>__tests__</strong> <br>Ex: <strong>InputCades.spec.tsx</strong></p>
+   > * You can see all version previews in [`demos`](https://github.com/felipecastrosales/ToDo/tree/master/demos) folder. 🧐📂
 
-## Storybook
+---
 
-```bash
-# Inicie o Storybook no browser
-# *Recomended*
-$ yarn storybook
+ <h2>
+   Challenges and Learnings along the way 🤯
+   </h2>
 
-# Inicie o Storybook no emulador *Will be removed*
-# altere no App.tsx o valor da variável
-# enableStorybook para true
-$ expo start
-```
+   This application was very simple and so was the development, but it also, due to the layout, forced me to consult documentation, articles and forums (StackOverFlow, GitHub Issues and others) several times, which made me learn even more 🤯. Foturnately, I managed to make the application more beautiful, and I intend  to make more updates in future.
 
-## Rodando o app
+---
 
-```bash
-# Inicie o Expo
-$ expo start
-```
+   <h2>How to Use 🤔</h2>
 
-<p>Depois que todos os passos acima forem seguidos, o app poderá ser visualizado
-tanto em um dispositivo físico ou em um emulador.</p>
-<p>Neste momento, instruções claras devem aparecer no terminal, caso
-as informações que estejam lá não sejam as que você busca, recomendo que acesse as documentações.</p>
-<details>
-  <summary><strong>Documentações Úteis</strong></summary>
+   ```   
+   - Clone this repository:
+   $ git clone https://github.com/felipecastrosales/ToDo ToDo
 
-- **v45.x** ([Expo](https://docs.expo.dev/))
-- **v0.x** ([React Native](https://reactnative.dev/docs/getting-started))
-- **v5.x** ([Styled Components](https://styled-components.com/docs))
-- **v6.x** ([StoryBook](https://storybook.js.org/tutorials/intro-to-storybook/react-native/en/get-started/))
-- **v2.x** ([Modalize](https://jeremybarbet.github.io/react-native-modalize/#/))
+   - Enter in directory:
+   $ cd ToDo
 
-</details>
+   - For install dependencies:
+   $ flutter packages get
+
+   - Run the app: 
+   $ flutter run
+   ```
+
+---
+
+   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with the instructor **[Daniel Ciolfi](https://linkedin.com/in/danielciolfi)**, in the course  **["Creating Android and iOS Apps with Flutter - Create 16 Apps"](https://www.udemy.com/course/curso-completo-flutter-app-android-ios)** on **[Udemy](https://www.udemy.com/)**.<br>
+   If it helped you, give ⭐, contribute, it will help me too 😉
+
+---
+
+   <div>
+
+   [![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipecastrosales/)](https://www.linkedin.com/in/felipecastrosales/)
+
+   </div>
+
