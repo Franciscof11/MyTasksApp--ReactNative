@@ -40,9 +40,9 @@
 
 ---
 
-   <h2>How to Use 🤔</h2>
-   
-    ```   
+<h2>How to Use 🤔</h2>
+
+   ```   
    - Clone this repository:
    $ git clone https://github.com/Franciscof11/ToDoApp--Flutter ToDoApp
 
@@ -68,6 +68,4 @@
    [![Linkedin Badge](https://img.shields.io/badge/-Francisco%20Gabriel-292929?style=flat-square&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/franciscossg/)](https://www.linkedin.com/in/franciscossg/)
 
    </div>
-
-
 
