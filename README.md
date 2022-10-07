@@ -41,4 +41,33 @@
 ---
 
    <h2>How to Use 🤔</h2>
+   
+    ```   
+   - Clone this repository:
+   $ git clone https://github.com/Franciscof11/ToDoApp--Flutter ToDoApp
+
+   - Enter in directory:
+   $ cd ToDoApp
+
+   - For install dependencies:
+   $ flutter packages get
+
+   - Run the app: 
+   $ flutter run
+   ```
+
+---
+
+   This project was developed by **[@Francisco Gabriel](https://www.linkedin.com/in/franciscossg/)**, 
+   if it helped you, give ⭐, it will help me too 😉.
+    
+---
+
+   <div>
+
+   [![Linkedin Badge](https://img.shields.io/badge/-Francisco%20Gabriel-292929?style=flat-square&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/franciscossg/)](https://www.linkedin.com/in/franciscossg/)
+
+   </div>
+
+
 
