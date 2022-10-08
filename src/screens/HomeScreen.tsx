@@ -18,7 +18,7 @@ export const HomeScreen: React.FC = () => {
     const addNewTask = () => {
         const data = {
             id: String(new Date().getTime()), /*Garantir id único para cada task.*/
-            title: newTask ? newTask : 'Tarefa vazia',
+            title: newTask ? newTask : 'Empty Task',
         };
 
         addTask(data);
@@ -39,7 +39,7 @@ export const HomeScreen: React.FC = () => {
                     <LoginInput
                         cursorColor={Colors.white}
                         placeholderTextColor="#555"
-                        placeholder="Nome da Tarefa"
+                        placeholder="Task name"
                         onChangeText={setNewTask}
                         value={newTask}
                     ></LoginInput>
@@ -47,7 +47,7 @@ export const HomeScreen: React.FC = () => {
                     <AddTaskButton
                         onPress={addNewTask}
                         activeOpacity={0.35}>
-                        <ButtonText>Adicionar</ButtonText>
+                        <ButtonText>Add new task</ButtonText>
                     </AddTaskButton>
 
                 </View>

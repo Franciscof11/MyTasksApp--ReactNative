@@ -60,6 +60,7 @@ export const TitleTasks = styled(TitleText)`
 export const TaskContentText = styled(Text)`
   color: #f1f1f1;
   font-size: 14px;
+  margin-left: 5px;
 `;
 
 export const TaskContentTouchView = styled(TouchableOpacity)`
@@ -67,8 +68,17 @@ export const TaskContentTouchView = styled(TouchableOpacity)`
   padding: 12px;
   border-radius: 5px;
   margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const ScrollListTasks = styled.FlatList`
   height: 408px;
+`;
+
+export const DeleteTaskButton = styled(TouchableOpacity)`
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
 `;
