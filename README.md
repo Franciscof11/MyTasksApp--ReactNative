@@ -1,4 +1,4 @@
-<h2 align="left">MyTasks App 📝</h2>
+<h2 align="center">MyTasks App 📝</h2>
 <p align="center">
     <img src="https://i.imgur.com/ZrJIyr8.png" width="650" alt="MyTask App Banner" />
 </p>
@@ -9,16 +9,16 @@
    
    - [About 📖](#about-)
    - [Preview 📱](#preview-)
-   - [Learnings and Technologies used 🤯](#---learnings-and-technologies-used----)
+   - [Learnings 🤯](#---learnings----)
+   - [Technologies Used 👨🏽‍💻](#---technologies-used----)
    - [How to Use 🤔](#how-to-use-)
    </p>
 
    <h2>About 📖</h2>
    
    <p>   
-      A simple ToDo app made with Flutter 💙.<br>
+      A simple ToDo app made with React Native.<br>
       With this app you can make your ToDos and organize them. You can add them, delete them, and view them so that you see the ones that are pending first, and below the completed ones. It is a simple application, but it can be very useful when it comes to your organization. 😃
-      This application is in version 1.1.
    </p>
 
 ---
@@ -33,10 +33,26 @@
 ---
 
  <h2>
-   Learnings and Technologies used 🤯
+   Learnings 🤯
    </h2>
 
-   This application was very simple and so was the development, but it also, due to the layout, forced me to consult documentation, articles and forums (StackOverFlow, GitHub Issues and others) several times, which made me learn even more 🤯. Foturnately, I managed to make the application more beautiful, and I intend  to make more updates in future.
+   This application was very simple and so was the development, but it also, due to the layout, forced me to consult documentation, articles and forums (StackOverFlow, GitHub Issues and others) several times, which made me learn even more 🤯. Foturnately, I managed to make the application more beautiful, and I intend  to make more updates in future. With this app I Learned about Async Storage, Advanced Components ( like flatlist ) , building and post on Play Store, and making splash screen.
+
+---
+
+ <h2>
+   Technologies Used 👨🏽‍💻
+   </h2>
+   
+
+   * React Native
+   * Expo
+   * Async Storage
+   * TDD
+   * Styled Components
+   * Jest
+   * React Navigation
+  
 
 ---
 
@@ -44,16 +60,22 @@
 
    ```   
    - Clone this repository:
-   $ git clone https://github.com/Franciscof11/ToDoApp--Flutter ToDoApp
+   $ git clone https://github.com/Franciscof11/MyTasksApp--ReactNative
 
    - Enter in directory:
-   $ cd ToDoApp
+   $ cd MyTasksApp--ReactNative
+   
+   - Install dependecies :
+   $ yarn
 
-   - For install dependencies:
-   $ flutter packages get
+   - Install Expo Go on your smartphone : 
+   https://expo.dev/client
 
-   - Run the app: 
-   $ flutter run
+   - Run the Expo App: 
+   $ expo start
+   
+   - Then scan the qr code in the expo go app : 
+   $ expo start
    ```
 
 ---
