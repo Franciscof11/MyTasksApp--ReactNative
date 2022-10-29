@@ -1,6 +1,6 @@
 <h2 align="center">MyTasks App 📝</h2>
 <p align="center">
-    <img src="https://i.imgur.com/ZrJIyr8.png" width="650" alt="MyTask App Banner" />
+    <img src="https://i.imgur.com/n3G40Fe.png" width="650" alt="App Banner" />
 </p>
 
    <h2>Topics 📋</h2>
